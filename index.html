@@ -109,31 +109,33 @@
   <div class="contact-container">
     
     <!-- Left: Contact Form -->
-       <form id="contact-form" class="contact-form">
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit" class="btn">Send Message</button>
-      <p id="form-status"></p> <!-- For showing success/failure -->
     </form>
 
-    <!-- Right: Info -->
+    <!-- Right: Info Card -->
     <div class="contact-info">
-      <h3>Feel free to talk</h3>
-      <p>
-        <span id="email-text">rohithpokala@gmail.com</span>
+      <h3>Feel Free to Talk</h3>
+      <p>I’m always open to collaborations, opportunities, or just a friendly chat.</p>
+
+      <p>📧 <span id="email-text">rohithpokala@gmail.com</span>
         <button class="copy-btn" onclick="copyToClipboard('email-text','email-msg')">📋</button>
         <span id="email-msg" class="copy-msg"></span>
       </p>
-      <p>
-        <span id="mobile-text">8019228964</span>
+
+      <p>📞 <span id="mobile-text">8019228964</span>
         <button class="copy-btn" onclick="copyToClipboard('mobile-text','mobile-msg')">📋</button>
         <span id="mobile-msg" class="copy-msg"></span>
       </p>
+
+      <p>📍 Hyderabad, India</p>
     </div>
-    
   </div>
 </section>
+
 
 
   <script src="script.js"></script>
