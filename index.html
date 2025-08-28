@@ -81,7 +81,7 @@
       </div>
 
       <div class="project-card">
-        <img src="images/auth.png" alt="Authentication Project">
+        <img src="images/auth.jpg" alt="Authentication Project">
         <div class="project-info">
           <h3>Authentication by ENP</h3>
           <p>Implemented a secure authentication module using Enhanced Numeric Passwords (ENP) combined with SHA-256 hashing and AES encryption.</p>
@@ -90,7 +90,7 @@
       </div>
 
       <div class="project-card">
-        <img src="images/travel.jpeg" alt="Tourism Website">
+        <img src="images/travel1.png" alt="Tourism Website">
         <div class="project-info">
           <h3>Adventour Tourism Website</h3>
           <p>Developed a responsive tourism booking platform with package booking features for destinations across Telangana, seamlessly integrated with a backend database.</p>
@@ -103,23 +103,38 @@
 
 
     <!-- Contact -->
-  <section id="contact" class="section contact">
-    <h2>Let's Connect</h2>
-    <p>Feel free to reach out for collaborations or just a friendly chat 👇</p>
+<section id="contact" class="section contact">
+  <h2>Let's Connect</h2>
+  <div class="contact-container">
+    
+    <!-- Left: Contact Form -->
+       <form id="contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="form-status"></p> <!-- For showing success/failure -->
+    </form>
 
-    <div class="contact-item">
-      <span id="email-text">rohithpokala@gmail.com</span>
-      <button class="copy-btn" onclick="copyToClipboard('email-text','email-msg')">📋</button>
-      <span id="email-msg" class="copy-msg"></span>
+    <!-- Right: Info -->
+    <div class="contact-info">
+      <h3>Feel free to talk</h3>
+      <p>
+        <span id="email-text">rohithpokala@gmail.com</span>
+        <button class="copy-btn" onclick="copyToClipboard('email-text','email-msg')">📋</button>
+        <span id="email-msg" class="copy-msg"></span>
+      </p>
+      <p>
+        <span id="mobile-text">8019228964</span>
+        <button class="copy-btn" onclick="copyToClipboard('mobile-text','mobile-msg')">📋</button>
+        <span id="mobile-msg" class="copy-msg"></span>
+      </p>
     </div>
+    
+  </div>
+</section>
 
-    <div class="contact-item">
-      <span id="mobile-text">8019228964</span>
-      <button class="copy-btn" onclick="copyToClipboard('mobile-text','mobile-msg')">📋</button>
-      <span id="mobile-msg" class="copy-msg"></span>
-    </div>
-  </section>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
   </body>
   </html>

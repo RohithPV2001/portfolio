@@ -32,3 +32,34 @@ function copyToClipboard(elementId, msgId) {
   console.log("✅ script.js loaded");
 
 }
+
+document.getElementById("contact-form").addEventListener("submit", async function(e) {
+  e.preventDefault(); // prevent redirect
+  const form = e.target;
+  const status = document.getElementById("form-status");
+  status.textContent = "Sending...";
+
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch("https://formspree.io/f/xwpnpnvd", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+    if (response.ok) {
+      status.textContent = "Message sent successfully!";
+      status.style.color = "lightgreen";
+      form.reset();
+    } else {
+      status.textContent = "Oops! Something went wrong.";
+      status.style.color = "red";
+    }
+  } catch (error) {
+    status.textContent = "Failed to send. Please try again later.";
+    status.style.color = "red";
+  }
+});
+
