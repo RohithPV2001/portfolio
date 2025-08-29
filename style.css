@@ -98,31 +98,6 @@ body {
   color: #29b6f6;
 }
 
-.intro-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease;
-  cursor: pointer;
-
-  background: #4fc3f7;
-  color: #000;
-}
-
-.btn:hover {
-  background: #0288d1;
-  color: #fff;
-}
 
 .btn-outline {
   background: transparent;
@@ -133,6 +108,55 @@ body {
 .btn-outline:hover {
   background: #4fc3f7;
   color: #000;
+}
+
+/* Resume Buttons Section */
+.intro-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+  background: #4fc3f7;
+  color: #000;
+}
+
+.btn:hover {
+  background: #0288d1;
+  color: #fff;
+}
+
+/* Icon button */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #4fc3f7;
+  color: #000;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.icon-btn:hover {
+  background: #0288d1;
+  color: #fff;
+}
+
+.icon-btn svg {
+  stroke: currentColor;
 }
 
 /* Generic Sections */
@@ -221,6 +245,39 @@ body {
 .skill-card:hover {
   background: #4fc3f7;
   color: #000;
+}
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cert-card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 280px;
+  max-width: 420px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  background: #2a2a2a;
+}
+
+.cert-card h3 {
+  color: #4fc3f7;
+  margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
 }
 
 /* Projects */
