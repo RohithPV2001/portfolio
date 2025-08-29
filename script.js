@@ -63,3 +63,6 @@ document.getElementById("contact-form").addEventListener("submit", async functio
   }
 });
 
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("show");
+}

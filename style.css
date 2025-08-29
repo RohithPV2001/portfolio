@@ -1,4 +1,8 @@
-/* General */
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -8,7 +12,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: flex-start;
@@ -48,10 +52,9 @@ body {
   color: #4fc3f7;
 }
 
-/* Home Section */
 .home {
   text-align: center;
-  padding: 8rem 2rem 5rem;
+  padding: 7rem 2rem 5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -110,7 +113,6 @@ body {
   color: #000;
 }
 
-/* Resume Buttons Section */
 .intro-buttons {
   display: flex;
   gap: 1rem;
@@ -136,7 +138,7 @@ body {
   color: #fff;
 }
 
-/* Icon button */
+
 .icon-btn {
   display: inline-flex;
   align-items: center;
@@ -159,7 +161,6 @@ body {
   stroke: currentColor;
 }
 
-/* Generic Sections */
 .section {
   padding: 3.5rem 2rem;
   max-width: 1000px;
@@ -172,7 +173,6 @@ body {
   font-size: 2rem;
 }
 
-/* About Me */
 .aboutme {
   background: #1a1a1a;
   padding: 1.5rem 2rem;
@@ -217,8 +217,6 @@ body {
   color: #4fc3f7;
 }
 
-
-/* Skills */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -260,6 +258,11 @@ body {
   transform: translateY(-5px);
   background: #2a2a2a;
 }
+.cert-card .btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
 
 .cert-card h3 {
   color: #4fc3f7;
@@ -293,8 +296,8 @@ body {
 
 .project-card img {
   width: 100%;
-  height: 340px;       /* fixed height */
-  object-fit: cover;   /* crop/zoom to fit without distortion */
+  height: 340px;       
+  object-fit: cover;   
   display: block;
   object-position: center;
 }
@@ -309,14 +312,12 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Contact */
-/* Contact Section */
 .contact-container {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
-  align-items: stretch; /* ✅ Both same height */
+  align-items: stretch; 
 }
 
 .contact-form, 
@@ -328,7 +329,7 @@ body {
   background: #1e1e1e;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* ✅ Centers content vertically */
+  justify-content: center; 
 }
 
 .contact-info {
@@ -337,8 +338,6 @@ body {
   height: 272px;
 }
 
-
-/* Form */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -355,7 +354,6 @@ body {
   outline: 2px solid #4fc3f7;
 }
 
-/* Info Card */
 .contact-info h3 {
   margin-bottom: 1rem;
   color: #4fc3f7;
